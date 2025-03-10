@@ -8,11 +8,6 @@ Autores: Geovanna Cristina Brenzinger
 Data: 11/03/2025
 Descricao: verificar existencia de duplicatas em uma lista
 */
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-# include "Booleano.h"
                         
 void construirNumeros(unsigned char V[]){
 	srand(time(NULL));
@@ -63,17 +58,4 @@ bool verificarRepetido(unsigned char V[]){
 	}		
 	
 	return tem_duplicata;
-}
-
-int main(){
-	unsigned char V[10];
-	construirNumeros(V);
-	mostrarNumeros(V);
-	if(verificarRepetido(V)){
-		printf("tem repetido");
-	} else {
-		printf("nao tem repetido");
-	}
-	
-	return 0;
-}
+}	
