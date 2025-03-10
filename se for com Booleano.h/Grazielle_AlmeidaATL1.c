@@ -24,8 +24,9 @@ void construirNumeros(unsigned char V[]){
 
 void mostrarNumeros(unsigned char V[]){
 	unsigned char i;
+	unsigned char qntNum;
 	
-	unsigned char qntNum = V[0];
+	qntNum = V[0];
 	
 	for(i = 1; i <= qntNum; i++){
 		printf("%d ", V[i]);
