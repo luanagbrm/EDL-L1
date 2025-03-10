@@ -42,14 +42,14 @@ bool verificarRepetido(unsigned char V[]){
 	
 	qntNum = V[0];
 	
-	tem_duplicata = FALSE;
+	tem_duplicata = false;
 	i = 1;
 	
-	while(i < qntNum && tem_duplicata != TRUE){
+	while(i < qntNum && tem_duplicata != true){
 		j = i + 1;
-		while(j <= qntNum && tem_duplicata != TRUE){
+		while(j <= qntNum && tem_duplicata != true){
 			if(V[i]==V[j]){
-				tem_duplicata = TRUE;
+				tem_duplicata = true;
 			} else {
 				j = j + 1;
 			}	
